@@ -1,0 +1,14 @@
+{
+  "name": "tiny-pixel/every-action-for-gutenberg",
+  "type": "wordpress-plugin",
+  "description": "Gutenberg support for NGP VAN Every Action.",
+  "authors": [
+    {
+      "name": "Kelly Mears",
+      "email": "developers@tinypixel.io",
+      "homepage": "https://tinypixel.io"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/pixelcollective/every-action-for-gutenberg"
+}
