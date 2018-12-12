@@ -1,0 +1,36 @@
+/**
+ * #.# Styles for Card Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+.every-action-card {
+	border-radius: 4px;
+	margin: 30px 0;
+	@include baseBlock();
+	@include box();
+	.every-action-card-image-container {
+		height: 300px;
+		background-size: cover;
+		background-position: center;
+		border-top-right-radius: $box-radius;
+		border-top-left-radius: $box-radius;
+		padding-top: 0px;
+		margin: calc(var(--box-padding-vert) * -1) calc(var(--box-padding-hori) * -1) var(--box-padding-vert) !important;
+		width: calc(100% + var(--box-padding-hori) * 2);
+		+ *:not(.wp-every-action-button) {
+			margin-top: 0 !important;
+			padding-top: 0 !important;
+		}
+	}
+}
+
+.every-action-card *,
+.every-action-horizontal-card *,
+.every-action-polaroid *
+p,
+ul li,
+ol li {
+  font-family: $family-sans-serif;
+}
+
+

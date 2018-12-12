@@ -1,0 +1,32 @@
+{
+  "name": "tiny-pixel/every-action",
+  "type": "wordpress-plugin",
+  "version": "1.0.6",
+  "description": "Non-profit CRM support for the WordPress 5 Block editor",
+  "keywords": [
+    "wordpress",
+    "gutenberg",
+    "custom post type"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kelly Mears",
+      "email": "developers@tinypixel.io",
+      "homepage": "https://tinypixel.io"
+    }
+  ],
+  "homepage": "https://github.com/pixelcollective/every-action",
+  "require": {
+    "php": ">=5.3.2",
+    "jjgrainger/posttypes": "^2.0",
+    "wpackio/enqueue": "^1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "TPC\\every-action\\": "includes/",
+      "PostTypes\\PostType\\": "includes/",
+      "Wpackio\\Enqueue\\": "includes/"
+    }
+  }
+}

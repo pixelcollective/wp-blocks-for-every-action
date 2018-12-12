@@ -1,0 +1,123 @@
+/**
+ * #.# Styles for Button Block.
+ *
+ * CSS for both Frontend+Backend.
+ */
+// .wp-block-button.every-action-button-center {
+// 	transform: translateX(-50%);
+// 	left: 50%;
+// 	position: relative;
+// }
+
+// span.wp-block-button.every-action-button-right {
+// 	transform: translateX(-100%);
+// 	left: 100%;
+// 	position: relative;
+// }
+
+/**
+ * Button link form styles.
+ */
+.every-action-button {
+	@include baseBlock();
+}
+
+// .wp-every-action-button.wp-every-action-button {
+.every-action-button {
+	border: none;
+	border-radius: 4px;
+	box-shadow: none !important;
+	cursor: pointer;
+	// display: inline-block;
+	// line-height: 1em !important;
+	// margin: 0;
+	.every-action-button-inner {
+		font-family: $family-sans-serif;
+		text-decoration: none !important;
+		white-space: nowrap;
+		display: inline-block;
+		color: #fff;
+		box-shadow: none !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	opacity: 1;
+	background: var(--s-primary-color, #2091e1);
+	// padding: 0.75em 1em;
+	transition: opacity .2s ease-in-out;
+	box-shadow: none !important;
+	@include baseButton();
+	font-size: 1em;
+	&:hover {
+		opacity: .85;
+		box-shadow: none !important;
+		// border: 0;
+	}
+}
+.every-action-button .every-action-button-inner:hover {
+	color: white;
+}
+
+
+.every-action-button-small.every-action-button .every-action-button-inner {
+	font-size: .75em;
+}
+// .every-action-button-normal {
+
+// }
+.every-action-button-medium.every-action-button {
+	padding-left: 1.25em;
+	padding-right: 1.25em;
+	.every-action-button-inner {
+		font-size: 1.25em;
+	}
+}
+.every-action-button-large.every-action-button {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	.every-action-button-inner {
+		font-size: 1.5em;
+	}
+}
+.every-action-button-left {
+	// text-align: left;
+	// margin-left: auto;
+	margin-right: auto;
+	display: table;
+}
+.every-action-button-center {
+	// text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+}
+.every-action-button-right {
+	// text-align: right;
+	margin-left: auto;
+	// margin-right: auto;
+	display: table;
+}
+.every-action-button-full {
+	display: block;
+	text-align: center;
+}
+// .every-action-button-full .every-action-button-inner {
+// 	display: block;
+// 	width: 100%;
+// 	text-align: center;
+// }
+
+// .wp-block-every-action-button.every-action-button-right {
+// 	margin: 10px 0;
+// 	text-align: right;
+// }
+// .wp-block-every-action-button.every-action-button-center {
+// 	// margin: 10px 0;
+// 	text-align: center;
+// }
+// .wp-block-every-action-button.every-action-button-left {
+// 	margin: 10px 0;
+// 	text-align: left;
+// }
+
+

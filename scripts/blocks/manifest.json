@@ -1,0 +1,46 @@
+{
+  "editor.css": "blocks/editor.css",
+  "editor.css.map": "blocks/editor.css.map",
+  "editor.js": "blocks/editor.js",
+  "editor.js.map": "blocks/editor.js.map",
+  "public.css": "blocks/public.css",
+  "public.css.map": "blocks/public.css.map",
+  "public.js": "blocks/public.js",
+  "public.js.map": "blocks/public.js.map",
+  "runtime.js": "blocks/runtime.js",
+  "runtime.js.map": "blocks/runtime.js.map",
+  "wpackioEp": {
+    "editor": {
+      "js": [
+        "blocks/runtime.js",
+        "blocks/editor.js"
+      ],
+      "js.map": [
+        "blocks/runtime.js.map",
+        "blocks/editor.js.map"
+      ],
+      "css": [
+        "blocks/editor.css"
+      ],
+      "css.map": [
+        "blocks/editor.css.map"
+      ]
+    },
+    "public": {
+      "js": [
+        "blocks/runtime.js",
+        "blocks/public.js"
+      ],
+      "js.map": [
+        "blocks/runtime.js.map",
+        "blocks/public.js.map"
+      ],
+      "css": [
+        "blocks/public.css"
+      ],
+      "css.map": [
+        "blocks/public.css.map"
+      ]
+    }
+  }
+}

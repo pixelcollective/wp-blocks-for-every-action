@@ -1,0 +1,165 @@
+.every-action-card-horizontal-panel {
+  transition: box-shadow .25s;
+  padding: $every-action-card-horizontal-padding;
+  margin: $element-top-margin 0 $element-bottom-margin 0;
+  border-radius: 2px;
+  @include every-action-z-depth-1();
+  background-color: $every-action-card-horizontal-bg-color;
+}
+
+.every-action-card-horizontal {
+  display: flex;
+  position: relative;
+  margin: $element-top-margin 0 $element-bottom-margin 0;
+  padding-left: 0;
+  background-color: $every-action-card-horizontal-bg-color;
+  transition: box-shadow .25s;
+  border-radius: 2px;
+  @include every-action-z-depth-1();
+
+  .every-action-image-upload-has-placeholder,
+  .every-action-card-horizontal-image {
+      min-height: 100%;
+      max-height: none;
+      background-size: cover;
+      overflow: visible;
+      display: flex;
+      background-repeat: no-repeat;
+      background-position: center center;
+  }
+  .every-action-card-horizontal-image + .every-action-card-horizontal-content {
+    max-height: 40%;
+  }
+  .every-action-card-horizontal-content {
+    max-height: 100%;
+    overflow: hidden;
+  }
+  .every-action-card-horizontal-action {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .every-action-card-horizontal-image {
+    min-height: 100%;
+      max-height: none;
+      background-size: cover;
+      overflow: visible;
+      min-width: 35%;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .every-action-card-horizontal-stacked {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+
+    .every-action-card-horizontal-content {
+      flex-grow: 1;
+    }
+  }
+
+  // Sticky Action Section
+  &.sticky-action {
+    .every-action-card-horizontal-action {
+      z-index: 2;
+    }
+
+    .every-action-card-horizontal-reveal {
+      z-index: 1;
+      padding-bottom: 64px;
+    }
+  }
+
+
+
+
+  .every-action-card-horizontal-image {
+    .every-action-card-horizontal-title {
+      color: $every-action-card-horizontal-bg-color;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      max-width: 100%;
+      padding: $every-action-card-horizontal-padding;
+    }
+  }
+
+  .every-action-card-horizontal-content {
+    padding: $every-action-card-horizontal-padding;
+    border-radius: 0 0 2px 2px;
+
+    p {
+      margin: 0;
+    }
+    .every-action-card-horizontal-title {
+      display: block;
+      line-height: 32px;
+      margin-bottom: 8px;
+
+      i {
+        line-height: 32px;
+      }
+    }
+  }
+
+  .every-action-card-horizontal-action {
+
+    background-color: inherit; // Use inherit to inherit color classes
+    border-top: 1px solid rgba(160,160,160,.2);
+    position: relative;
+    padding: 16px $every-action-card-horizontal-padding;
+
+    a:not(.btn):not(.btn-large):not(.btn-floating) {
+      color: $every-action-card-horizontal-link-color;
+      margin-right: $every-action-card-horizontal-padding;
+      transition: color .3s ease;
+
+      &:hover { color: $every-action-card-horizontal-link-color-light; }
+    }
+
+    .every-action-button {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .every-action-card-horizontal-reveal {
+    padding: $every-action-card-horizontal-padding;
+    position: absolute;
+    background-color: $every-action-card-horizontal-bg-color;
+    width: 100%;
+    overflow-y: auto;
+    left: 0;
+    top: 100%;
+    height: 100%;
+    z-index: 3;
+    display: none;
+
+    .every-action-card-horizontal-title {
+      cursor: pointer;
+      display: block;
+    }
+  }
+}
+
+.every-action-card-horizontal-image .every-action-image-upload-remove {
+  position: relative;
+  left: 4px;
+}
+
+.every-action-card *,
+.every-action-card-horizontal *,
+.every-action-polaroid *
+p,
+ul li,
+ol li {
+  font-family: $family-sans-serif;
+}

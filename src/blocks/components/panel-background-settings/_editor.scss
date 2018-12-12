@@ -1,0 +1,6 @@
+// Editor only: Remove border radius on full width.
+[data-align="full"] {
+    .every-action-has-background {
+        border-radius: 0 !important;
+    }
+}
