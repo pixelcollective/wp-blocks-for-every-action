@@ -1,5 +1,5 @@
 module.exports = {
-	host: '10.0.0.236',
+	host: 'localhost',
 	proxy: 'http://bedrock.lndo.site',
 	port: 3000,
 	ui: {
